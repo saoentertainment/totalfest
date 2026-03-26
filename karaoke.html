@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karaoke Sao — Total Fest</title>
+
+<!-- Open Graph / WhatsApp / Redes Sociales -->
+<meta property="og:type"         content="website" />
+<meta property="og:url"          content="https://javisao.github.io/totalfest/karaoke.html" />
+<meta property="og:title"        content="Karaoke Sao — Total Fest" />
+<meta property="og:description"  content="¡Tú eres la estrella de la noche! Karaoke profesional, DJ, videos, luces y animación. Paquetes SAO START, SAO FULL y SAO TOTAL. CDMX y Zona Metropolitana." />
+<meta property="og:image"        content="https://res.cloudinary.com/dtow1b4k7/image/upload/v1774503280/og_karaoke_vdjtuk.png" />
+<meta property="og:image:width"  content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale"       content="es_MX" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="Karaoke Sao — Total Fest" />
+<meta name="twitter:description" content="¡Tú eres la estrella de la noche! Karaoke profesional con DJ, videos, luces y animación. CDMX y Zona Metropolitana." />
+<meta name="twitter:image"       content="https://res.cloudinary.com/dtow1b4k7/image/upload/v1774503280/og_karaoke_vdjtuk.png" />
+
+<!-- SEO -->
+<meta name="description" content="Karaoke Sao · Total Fest — Karaoke profesional, DJ, videos, presentaciones y luces para tu evento. Paquetes SAO START $800/hr, SAO FULL $1,100/hr y SAO TOTAL $2,100/hr. CDMX y Zona Metropolitana." />
+<meta name="keywords"    content="karaoke profesional, karaoke CDMX, DJ karaoke, karaoke para eventos, bodas karaoke, Total Fest, Karaoke Sao" />
+<meta name="author"      content="Total Fest" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#0a84ff;--azul2:#005fcb;--azul3:#002a72;--azul4:#001435;--plata:#c8d6e5;--plata2:#8fa8c8;--negro:#060c14;--negro2:#0d1a2b;--blanco:#f0f6ff;--oro:#ffe566;--glow:0 0 24px #0a84ffaa,0 0 60px #0a84ff33;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--negro);color:var(--blanco);font-family:'Rajdhani',sans-serif;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse 80% 60% at 15% 10%,#002a7244 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 85% 80%,#0a84ff18 0%,transparent 60%);animation:bgP 8s ease-in-out infinite alternate;}
+@keyframes bgP{from{opacity:.7}to{opacity:1}}
+body::after{content:'';position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(10,132,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(10,132,255,.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:14px 5%;background:linear-gradient(180deg,#060c14f0 0%,transparent 100%);backdrop-filter:blur(10px);}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:.15em;color:var(--blanco);text-decoration:none;}
+.nav-logo span{color:var(--azul);}
+.nav-back{display:flex;align-items:center;gap:.4rem;color:var(--plata2);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;font-weight:600;transition:color .3s;}
+.nav-back:hover{color:var(--azul);}
+.nav-wa{display:flex;align-items:center;gap:.4rem;background:#25D366;color:#fff;padding:7px 16px;border-radius:30px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-decoration:none;transition:transform .2s,box-shadow .2s;white-space:nowrap;}
+.nav-wa:hover{transform:scale(1.05);box-shadow:0 0 20px #25D36688;}
+
+.hero{position:relative;z-index:1;min-height:55vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 5% 60px;}
+.hero-icon{font-size:4rem;margin-bottom:1rem;animation:fadeDown .6s ease both;filter:drop-shadow(0 0 20px #0a84ff88);}
+.hero-titulo{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.5rem,10vw,7rem);letter-spacing:.08em;line-height:.9;animation:fadeDown .7s .1s ease both;filter:drop-shadow(0 0 30px #0a84ff66);}
+.hero-titulo span{color:var(--azul);}
+.hero-slogan{font-family:'Montserrat',sans-serif;font-weight:300;font-size:clamp(.85rem,2vw,1.1rem);letter-spacing:.3em;text-transform:uppercase;color:var(--plata2);margin:1rem 0 .5rem;animation:fadeUp .7s .2s ease both;}
+.hero-desc{font-size:clamp(1rem,2.5vw,1.2rem);color:var(--plata);max-width:520px;line-height:1.6;animation:fadeUp .7s .3s ease both;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-top:1.5rem;animation:fadeUp .7s .4s ease both;}
+.badge{background:#0d1a2b;border:1px solid #1a3050;padding:5px 14px;border-radius:20px;font-size:.8rem;letter-spacing:.08em;color:var(--plata2);}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+.sec{position:relative;z-index:1;padding:80px 5%;}
+.sec-label{font-family:'Montserrat',sans-serif;font-weight:700;font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--azul);margin-bottom:.6rem;}
+.sec-titulo{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,5vw,3.5rem);letter-spacing:.05em;color:var(--blanco);margin-bottom:.4rem;}
+.sec-titulo span{color:var(--azul);}
+.divider{width:50px;height:3px;background:linear-gradient(90deg,var(--azul),transparent);margin-bottom:2.5rem;}
+
+.paquetes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2px;margin-top:1rem;}
+.paq-card{background:var(--negro2);border-top:3px solid transparent;overflow:hidden;transition:transform .3s,box-shadow .3s;}
+.paq-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px #0a84ff22;}
+.paq-start{border-top-color:#1a4a7a;}
+.paq-full{border-top-color:var(--azul);}
+.paq-total{border-top-color:var(--oro);}
+.paq-hdr{padding:1.8rem 1.6rem 1.4rem;position:relative;overflow:hidden;}
+.paq-start .paq-hdr{background:linear-gradient(135deg,#0a1f3a 0%,#1a4a7a 100%);}
+.paq-full .paq-hdr{background:linear-gradient(135deg,#0a2a5a 0%,#0a5fa8 100%);}
+.paq-total .paq-hdr{background:linear-gradient(135deg,#0a1020 0%,#1a2a40 100%);}
+.paq-total .paq-hdr::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,#ffe56622 0%,transparent 70%);}
+.paq-emoji{font-size:2rem;display:block;margin-bottom:.5rem;}
+.paq-nombre{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:.1em;color:var(--blanco);line-height:1;}
+.paq-total .paq-nombre{color:var(--oro);}
+.paq-precio{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.5rem;color:var(--oro);margin:.4rem 0 .2rem;}
+.paq-min{font-size:.85rem;color:var(--plata2);letter-spacing:.05em;}
+.paq-body{padding:1.4rem 1.6rem 1.6rem;}
+.item{display:flex;align-items:flex-start;gap:.7rem;padding:.4rem 0;border-bottom:1px solid #1a3050;font-size:.95rem;color:var(--plata);line-height:1.4;}
+.item:last-child{border-bottom:none;}
+.item-ico{color:var(--azul);font-size:.7rem;margin-top:.35rem;flex-shrink:0;}
+.paq-total .item-ico{color:var(--oro);}
+.extras-label{font-family:'Montserrat',sans-serif;font-weight:700;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--azul);margin:1rem 0 .5rem;display:flex;align-items:center;gap:.5rem;}
+.extras-label::after{content:'';flex:1;height:1px;background:var(--azul2);}
+.item-extra{display:flex;align-items:flex-start;gap:.7rem;padding:.3rem 0;font-size:.9rem;color:var(--plata2);font-style:italic;}
+.popular{position:absolute;top:1rem;right:1rem;background:var(--azul);color:#fff;font-family:'Montserrat',sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.15em;padding:3px 10px;border-radius:20px;text-transform:uppercase;}
+.paq-total .popular{background:var(--oro);color:var(--negro);}
+
+.docs-sec{background:var(--negro2);position:relative;z-index:1;padding:80px 5%;}
+.docs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:1rem;}
+.doc-card{background:#060c14;border:1px solid #1a3050;border-radius:6px;padding:1.6rem;display:flex;flex-direction:column;gap:1rem;transition:border-color .3s,transform .2s;}
+.doc-card:hover{border-color:var(--azul);transform:translateY(-3px);}
+.doc-icon{font-size:2rem;}
+.doc-nombre{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.15rem;color:var(--blanco);}
+.doc-desc{font-size:.9rem;color:var(--plata2);line-height:1.5;}
+.doc-btns{display:flex;gap:.6rem;flex-wrap:wrap;}
+.btn-ver{display:inline-flex;align-items:center;gap:.4rem;background:var(--azul);color:#fff;padding:8px 16px;border-radius:4px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.08em;text-decoration:none;cursor:pointer;border:none;transition:box-shadow .3s,transform .2s;}
+.btn-ver:hover{box-shadow:var(--glow);transform:translateY(-1px);}
+.btn-dl{display:inline-flex;align-items:center;gap:.4rem;border:1px solid #1a3050;color:var(--plata2);padding:8px 16px;border-radius:4px;background:transparent;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.08em;text-decoration:none;cursor:pointer;transition:border-color .3s,color .3s;}
+.btn-dl:hover{border-color:var(--azul);color:var(--azul);}
+
+.modal-overlay{position:fixed;inset:0;z-index:500;background:#000000cc;backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:2rem;}
+.modal-overlay.open{display:flex;}
+.modal-box{background:var(--negro2);border:1px solid #1a3050;border-radius:8px;width:100%;max-width:800px;max-height:90vh;display:flex;flex-direction:column;overflow:hidden;animation:modalIn .3s ease;}
+@keyframes modalIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+.modal-hdr{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.5rem;border-bottom:1px solid #1a3050;background:var(--azul3);flex-shrink:0;}
+.modal-titulo{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.1em;color:var(--blanco);}
+.modal-actions{display:flex;gap:.6rem;align-items:center;}
+.modal-dl{display:inline-flex;align-items:center;gap:.4rem;background:var(--azul);color:#fff;padding:6px 14px;border-radius:4px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.08em;text-decoration:none;border:none;cursor:pointer;}
+.modal-close{background:none;border:none;color:var(--plata2);cursor:pointer;font-size:1.5rem;line-height:1;padding:4px 8px;transition:color .2s;}
+.modal-close:hover{color:#fff;}
+.modal-body{flex:1;overflow-y:auto;padding:2rem 1.5rem;font-size:.95rem;line-height:1.7;color:var(--plata);}
+.modal-body h3{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.08em;color:var(--azul);margin:1.5rem 0 .5rem;}
+.modal-body h3:first-child{margin-top:0;}
+.modal-body p{margin-bottom:.6rem;}
+.modal-body ul{padding-left:1.2rem;margin-bottom:.8rem;}
+.modal-body ul li{margin-bottom:.3rem;}
+.modal-body .nota{background:#0d1a2b;border-left:3px solid var(--azul);padding:.8rem 1rem;margin:.8rem 0;border-radius:0 4px 4px 0;font-size:.9rem;}
+.modal-body .alerta{background:#1a0808;border-left:3px solid #cc3300;padding:.8rem 1rem;margin:.8rem 0;border-radius:0 4px 4px 0;font-size:.9rem;color:#ffcccc;}
+.modal-body table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.9rem;}
+.modal-body th{background:var(--azul3);color:var(--blanco);padding:.5rem .8rem;text-align:left;}
+.modal-body td{padding:.5rem .8rem;border-bottom:1px solid #1a3050;}
+
+.cond-sec{position:relative;z-index:1;padding:80px 5%;}
+.cond-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin-top:1rem;}
+.cond-item{display:flex;gap:1rem;align-items:flex-start;background:var(--negro2);border:1px solid #1a3050;padding:1.2rem;border-radius:6px;}
+.cond-ico{font-size:1.5rem;flex-shrink:0;margin-top:.1rem;}
+.cond-txt{font-size:.9rem;color:var(--plata2);line-height:1.5;}
+.cond-txt strong{color:var(--blanco);display:block;margin-bottom:.2rem;}
+.cond-alerta{border-color:#cc330055;background:#0a0606;}
+.cond-alerta .cond-txt{color:#ffcccc;}
+.cond-alerta .cond-txt strong{color:#ff6644;}
+
+.pago-sec{background:var(--negro2);position:relative;z-index:1;padding:80px 5%;}
+.pago-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:1rem;}
+.pago-card{background:#060c14;padding:2rem;text-align:center;}
+.pago-num{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--azul);letter-spacing:.05em;line-height:1;}
+.pago-label{font-weight:700;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blanco);margin:.3rem 0;}
+.pago-desc{font-size:.9rem;color:var(--plata2);line-height:1.5;}
+.nota-cancelacion{margin-top:1.5rem;padding:.8rem 1.2rem;background:#0d1a2b;border-left:3px solid var(--azul);border-radius:0 4px 4px 0;font-size:.9rem;color:var(--plata2);}
+
+.cta-sec{position:relative;z-index:1;padding:80px 5%;text-align:center;background:linear-gradient(180deg,var(--negro) 0%,#001435 100%);}
+.cta-sub{font-size:1.1rem;color:var(--plata2);max-width:480px;margin:0 auto 2.5rem;line-height:1.7;}
+.wa-btn{display:inline-flex;align-items:center;gap:1rem;background:#25D366;color:#fff;padding:18px 44px;border-radius:6px;font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:.12em;text-decoration:none;transition:transform .2s,box-shadow .3s;margin-bottom:1.5rem;}
+.wa-btn:hover{transform:scale(1.04);box-shadow:0 0 40px #25D36666;}
+.cta-info{font-size:.85rem;color:var(--plata2);letter-spacing:.08em;}
+
+footer{position:relative;z-index:1;background:#030810;padding:2.5rem 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;border-top:1px solid #1a3050;}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.15em;color:var(--blanco);text-decoration:none;}
+.footer-logo span{color:var(--azul);}
+.footer-copy{font-size:.75rem;color:var(--plata2);}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+.back-top{position:fixed;bottom:2rem;right:2rem;z-index:200;width:46px;height:46px;background:var(--azul);border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transform:translateY(20px);transition:opacity .3s,transform .3s,box-shadow .3s;box-shadow:0 4px 20px #0a84ff55;}
+.back-top.visible{opacity:1;transform:translateY(0);}
+.back-top:hover{box-shadow:var(--glow);transform:translateY(-3px);}
+.back-top svg{width:18px;height:18px;fill:#fff;}
+
+@media(max-width:600px){.nav-back span{display:none;}.pago-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://javisao.github.io/totalfest/" class="nav-logo">TOTAL<span>FEST</span></a>
+  <a href="https://javisao.github.io/totalfest/" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+    <span>Ver todos los servicios</span>
+  </a>
+  <a href="https://wa.me/5532687918?text=Hola!%20Me%20interesa%20Karaoke%20Sao" class="nav-wa" target="_blank">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    Cotizar ahora
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-icon">🎤</div>
+  <h1 class="hero-titulo">KARAOKE <span>SAO</span></h1>
+  <p class="hero-slogan">¡Tu eres la estrella de la noche!</p>
+  <p class="hero-desc">Karaoke profesional, música para bailar, videos, presentaciones y DJ. Una experiencia completa e inolvidable para tu evento.</p>
+  <div class="hero-badges">
+    <span class="badge">🎤 Karaoke</span>
+    <span class="badge">🎧 DJ</span>
+    <span class="badge">📺 Videos</span>
+    <span class="badge">🎥 Presentaciones</span>
+    <span class="badge">🎵 Todos los géneros</span>
+    <span class="badge">📍 CDMX & Edomex</span>
+  </div>
+</section>
+
+<!-- PAQUETES -->
+<section class="sec" id="paquetes">
+  <div class="reveal">
+    <p class="sec-label">Elige tu experiencia</p>
+    <h2 class="sec-titulo">Nuestros <span>paquetes</span></h2>
+    <div class="divider"></div>
+  </div>
+  <div class="paquetes-grid reveal">
+
+    <div class="paq-card paq-start">
+      <div class="paq-hdr">
+        <span class="paq-emoji">🎯</span>
+        <div class="paq-nombre">SAO START</div>
+        <div class="paq-precio">$800 <span style="font-size:1rem;font-weight:400;color:var(--plata2)">/ hora</span></div>
+        <div class="paq-min">Mínimo 5 horas · $4,000 base</div>
+      </div>
+      <div class="paq-body">
+        <div class="item"><span class="item-ico">◆</span>Karaoke profesional · catálogo completo</div>
+        <div class="item"><span class="item-ico">◆</span>Videos musicales en pantalla</div>
+        <div class="item"><span class="item-ico">◆</span>Presentaciones en pantalla</div>
+        <div class="item"><span class="item-ico">◆</span>DJ · mezcla todos los géneros</div>
+        <div class="item"><span class="item-ico">◆</span>Bocina 800W con confort acústico</div>
+        <div class="item"><span class="item-ico">◆</span>Pantalla 40"</div>
+        <div class="item"><span class="item-ico">◆</span>4 micrófonos inalámbricos semiprofesionales</div>
+        <div class="item"><span class="item-ico">◆</span>Sistema QR para peticiones</div>
+        <div class="item"><span class="item-ico">◆</span>WiFi del lugar recomendable</div>
+      </div>
+    </div>
+
+    <div class="paq-card paq-full">
+      <div class="paq-hdr">
+        <span class="popular">Más popular</span>
+        <span class="paq-emoji">🎵</span>
+        <div class="paq-nombre">SAO FULL</div>
+        <div class="paq-precio">$1,100 <span style="font-size:1rem;font-weight:400;color:var(--plata2)">/ hora</span></div>
+        <div class="paq-min">Mínimo 5 horas · $5,500 base</div>
+      </div>
+      <div class="paq-body">
+        <div class="item"><span class="item-ico">◆</span>Todo lo incluido en SAO START</div>
+        <div class="item"><span class="item-ico">◆</span>Animador profesional</div>
+        <div class="item"><span class="item-ico">◆</span>2 Bocinas con confort acústico (2,000W)</div>
+        <div class="item"><span class="item-ico">◆</span>Pantalla 42"</div>
+        <div class="item"><span class="item-ico">◆</span>4 micrófonos inalámbricos profesionales</div>
+        <div class="item"><span class="item-ico">◆</span>Luces: 2 barras LED + 2 robóticas</div>
+        <div class="item"><span class="item-ico">◆</span>Cabina DJ profesional</div>
+        <div class="item"><span class="item-ico">◆</span>Programa personalizado del evento</div>
+        <div class="extras-label">Extras a consideración <span style="font-size:.7rem;color:var(--plata2);font-style:italic;font-family:'Rajdhani',sans-serif">(costo adicional)</span></div>
+        <div class="item-extra"><span style="color:#c9a84c">☆</span>&nbsp;Kit de Animación SAO</div>
+        <div class="item-extra"><span style="color:#c9a84c">☆</span>&nbsp;Cantante en vivo</div>
+        <div class="extras-label" style="margin-top:1rem;">🌟 ¿Quieres ser el Rockstar?</div>
+        <div class="item-extra" style="background:#0a1a30;border-radius:4px;padding:.5rem .6rem;margin-top:.3rem;">
+          <span style="color:#ffe566">★</span>&nbsp;
+          <span>Conoce <strong style="color:var(--blanco)">KaraRocker</strong> — ¡Tú en el escenario con banda en vivo! &nbsp;
+          <a href="https://javisao.github.io/totalfest/#proyectos" style="color:var(--azul);font-weight:700;text-decoration:none;" target="_blank">Ver más →</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="paq-card paq-total">
+      <div class="paq-hdr">
+        <span class="popular">Premium</span>
+        <span class="paq-emoji">👑</span>
+        <div class="paq-nombre">SAO TOTAL</div>
+        <div class="paq-precio" style="color:var(--oro)">$2,100 <span style="font-size:1rem;font-weight:400;color:var(--plata2)">/ hora</span></div>
+        <div class="paq-min">Mínimo 5 horas · $10,500 base</div>
+      </div>
+      <div class="paq-body">
+        <div class="item"><span class="item-ico">◆</span>Todo lo incluido en SAO FULL</div>
+        <div class="item"><span class="item-ico">◆</span>Subwoofer adicional 900W</div>
+        <div class="item"><span class="item-ico">◆</span>Par de luces BEAM profesionales</div>
+        <div class="item"><span class="item-ico">◆</span>4 luces redondas LED adicionales</div>
+        <div class="item"><span class="item-ico">◆</span>Máquina de humo para efectos</div>
+        <div class="item"><span class="item-ico">◆</span>Segunda pantalla 42" (cobertura total)</div>
+        <div class="item"><span class="item-ico">◆</span>Láser profesional</div>
+        <div class="item"><span class="item-ico">◆</span>DJ tipo RAVE · set de alta energía</div>
+        <div class="item"><span class="item-ico">◆</span>Kit de Animación SAO incluido</div>
+        <div class="item"><span class="item-ico">◆</span>Diseño de iluminación y efectos coordinados</div>
+        <div class="extras-label">Extras a consideración <span style="font-size:.7rem;color:var(--plata2);font-style:italic;font-family:'Rajdhani',sans-serif">(costo adicional)</span></div>
+        <div class="item-extra"><span style="color:#c9a84c">☆</span>&nbsp;Cantante en vivo</div>
+        <div class="extras-label" style="margin-top:1rem;">🌟 ¿Quieres llevar esto al siguiente nivel?</div>
+        <div class="item-extra" style="background:#0a1a30;border-radius:4px;padding:.5rem .6rem;margin-top:.3rem;">
+          <span style="color:#ffe566">★</span>&nbsp;
+          <span>Agrega <strong style="color:var(--blanco)">KaraRocker</strong> — ¡Sube al escenario con banda en vivo! &nbsp;
+          <a href="https://javisao.github.io/totalfest/#proyectos" style="color:var(--azul);font-weight:700;text-decoration:none;" target="_blank">Ver más →</a></span>
+        </div>
+
+  </div>
+</section>
+
+<!-- DOCUMENTOS -->
+<section class="docs-sec" id="documentos">
+  <div class="reveal">
+    <p class="sec-label">Todo en orden para tu evento</p>
+    <h2 class="sec-titulo">Documentos <span>del servicio</span></h2>
+    <div class="divider"></div>
+  </div>
+  <div class="docs-grid reveal">
+
+    <div class="doc-card">
+      <div class="doc-icon">📋</div>
+      <div class="doc-nombre">Cotización Karaoke Sao</div>
+      <div class="doc-desc">Detalle completo de paquetes, precios, forma de pago y condiciones del servicio.</div>
+      <div class="doc-btns">
+        <button class="btn-ver" onclick="abrirModal('cotizacion')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          Ver
+        </button>
+        <a class="btn-dl" href="cotizacion_karaoke_sao_v2.docx" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Descargar
+        </a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">📄</div>
+      <div class="doc-nombre">Contrato de Servicios</div>
+      <div class="doc-desc">Contrato oficial con cláusulas, políticas de cancelación, responsabilidades y firmas.</div>
+      <div class="doc-btns">
+        <button class="btn-ver" onclick="abrirModal('contrato')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          Ver
+        </button>
+        <a class="btn-dl" href="Contrato_Servicios_Musicales.docx" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Descargar
+        </a>
+      </div>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">📍</div>
+      <div class="doc-nombre">Guía de Requisitos del Lugar</div>
+      <div class="doc-desc">Todo lo que necesitas preparar en el lugar para garantizar el mejor servicio.</div>
+      <div class="doc-btns">
+        <button class="btn-ver" onclick="abrirModal('requisitos')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          Ver
+        </button>
+        <a class="btn-dl" href="Guia_Requisitos_Lugar.docx" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Descargar
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NOTAS IMPORTANTES -->
+<section class="cond-sec" id="condiciones">
+  <div class="reveal">
+    <p class="sec-label">Antes de confirmar</p>
+    <h2 class="sec-titulo">Notas <span>importantes</span></h2>
+    <div class="divider"></div>
+  </div>
+  <div class="cond-grid reveal">
+    <div class="cond-item"><span class="cond-ico">⏰</span><div class="cond-txt"><strong>Acceso con 3 horas de anticipación</strong>El cliente debe proveer acceso al lugar 3 hrs antes para instalación y prueba de sonido.</div></div>
+    <div class="cond-item"><span class="cond-ico">⚡</span><div class="cond-txt"><strong>Instalación eléctrica</strong>Contactos aterrizados (3 patas) con breaker mínimo 15A. Daños por instalación deficiente son responsabilidad del contratante al 100%.</div></div>
+    <div class="cond-item"><span class="cond-ico">🏟</span><div class="cond-txt"><strong>Espacio y protección</strong>Área despejada con techo o lona que cubra músicos, equipo e instrumentos. Suelo firme y estable (no pasto húmedo o tierra para evitar riesgos eléctricos).</div></div>
+    <div class="cond-item"><span class="cond-ico">🌐</span><div class="cond-txt"><strong>WiFi — todos los paquetes</strong>Se recomienda WiFi en el lugar para todos los paquetes. En caso de no haber, favor de reportarlo con anticipación para ir preparados con solución alternativa.</div></div>
+    <div class="cond-item"><span class="cond-ico">🔑</span><div class="cond-txt"><strong>Accesos en privadas o condominios</strong>Si el evento es en fraccionamiento, condominio o privada, favor de tramitar con anticipación los permisos y accesos necesarios para vehículos de carga.</div></div>
+    <div class="cond-item"><span class="cond-ico">🚛</span><div class="cond-txt"><strong>Logística de traslado del equipo</strong>Si el acceso al lugar implica subir escaleras, cruzar terreno difícil o distancias considerables desde el vehículo, se aplicará un cargo adicional por maniobras de traslado.</div></div>
+    <div class="cond-item"><span class="cond-ico">🏨</span><div class="cond-txt"><strong>Recintos sindicalizados</strong>Si el lugar tiene sindicato (SUTM, CROC, ANDA u otro), la cuota sindical es a cargo del contratante.</div></div>
+    <div class="cond-item"><span class="cond-ico">🚗</span><div class="cond-txt"><strong>Zona de cobertura</strong>Karaoke Sao opera principalmente en CDMX y Zona Metropolitana. Para eventos en otras zonas del Estado de México u otras ciudades, el costo de traslado se ajusta según la distancia.</div></div>
+    <div class="cond-item"><span class="cond-ico">🍽</span><div class="cond-txt"><strong>Atención para el staff</strong>Como cortesía hacia el equipo Karaoke Sao, se agradece considerar una mesa con alimentos y bebidas durante los descansos. ¡Siempre bien recibido y muy apreciado! 😊</div></div>
+    <div class="cond-item cond-alerta"><span class="cond-ico">⚠️</span><div class="cond-txt"><strong>Daños al equipo</strong>Daños causados por invitados o instalaciones deficientes: el contratante cubre al 100% en máximo 15 días.</div></div>
+    <div class="cond-item cond-alerta"><span class="cond-ico">⚠️</span><div class="cond-txt"><strong>Tiempo contratado</strong>Transcurre de forma ininterrumpida. Interrupciones por mariachis, rifas, discursos, etc. NO generan tiempo de reposición.</div></div>
+  </div>
+</section>
+
+<!-- FORMA DE PAGO -->
+<section class="pago-sec" id="pago">
+  <div class="reveal">
+    <p class="sec-label">Sin complicaciones</p>
+    <h2 class="sec-titulo">Forma de <span>pago</span></h2>
+    <div class="divider"></div>
+  </div>
+  <div class="pago-grid reveal">
+    <div class="pago-card">
+      <div class="pago-num">50%</div>
+      <div class="pago-label">💳 Anticipo</div>
+      <div class="pago-desc">Al confirmar el evento aparta tu fecha. Sin anticipo el contrato no tiene validez. No reembolsable con menos de 15 días de anticipación a la cancelación.</div>
+    </div>
+    <div class="pago-card">
+      <div class="pago-num">50%</div>
+      <div class="pago-label">🎯 Liquidación</div>
+      <div class="pago-desc">El día del evento antes de iniciar la descarga del equipo. Forma y plazo NO son negociables.</div>
+    </div>
+  </div>
+  <div class="nota-cancelacion reveal">
+    📋 &nbsp;<strong>Cancelaciones:</strong> 30+ días → 75% devolución &nbsp;|&nbsp; 15 días → 50% &nbsp;|&nbsp; Menos de 8 días → sin devolución (puede reagendarse)
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="reveal">
+    <p class="sec-label">Hagámoslo realidad</p>
+    <h2 class="sec-titulo">¿Listo para tu <span>evento?</span></h2>
+    <div class="divider" style="margin:0 auto 2rem;"></div>
+    <p class="cta-sub">Escríbenos por WhatsApp y recibe tu cotización personalizada en minutos. Sin compromisos.</p>
+    <a href="https://wa.me/5532687918?text=Hola%20Total%20Fest!%20Me%20interesa%20Karaoke%20Sao%20para%20mi%20evento." class="wa-btn" target="_blank">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      COTIZAR POR WHATSAPP
+    </a>
+    <p class="cta-info">📍 CDMX & Estado de México &nbsp;·&nbsp; 📱 Respuesta inmediata &nbsp;·&nbsp; ✅ Vigencia 15 días</p>
+  </div>
+</section>
+
+<footer>
+  <a href="https://javisao.github.io/totalfest/" class="footer-logo">TOTAL<span>FEST</span></a>
+  <p class="footer-copy">© 2026 Total Fest — Entretenimiento profesional desde 1988</p>
+  <p class="footer-copy">Hecho con 🎤 en México</p>
+</footer>
+
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+</button>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="cerrarModal(event)">
+  <div class="modal-box">
+    <div class="modal-hdr">
+      <span class="modal-titulo" id="modal-titulo"></span>
+      <div class="modal-actions">
+        <a class="modal-dl" id="modal-dl" href="#" download>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Descargar
+        </a>
+        <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open');document.body.style.overflow=''">✕</button>
+      </div>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+const contenidos = {
+  cotizacion: {
+    titulo: "📋 Cotización — Karaoke Sao",
+    dl: "cotizacion_karaoke_sao_v2.docx",
+    html: `
+      <h3>Paquetes disponibles</h3>
+      <table>
+        <tr><th>Paquete</th><th>Precio / hr</th><th>Base (5 hrs)</th></tr>
+        <tr><td>🎯 SAO START</td><td>$800</td><td>$4,000</td></tr>
+        <tr><td>🎵 SAO FULL</td><td>$1,100</td><td>$5,500</td></tr>
+        <tr><td>👑 SAO TOTAL</td><td>$2,100</td><td>$10,500</td></tr>
+      </table>
+      <h3>Forma de pago</h3>
+      <p><strong>50% anticipo</strong> al confirmar la fecha + <strong>50% liquidación</strong> el día del evento antes de iniciar descarga del equipo.</p>
+      <div class="nota">💡 Vigencia: <strong>15 días naturales</strong>. Contáctanos por WhatsApp para cotización personalizada con datos de tu evento.</div>
+      <h3>Condiciones</h3>
+      <ul>
+        <li>El anticipo aparta la fecha y es <strong>no reembolsable</strong> con menos de 15 días de anticipación.</li>
+        <li>Acceso al lugar con <strong>3 horas de anticipación</strong> para instalación.</li>
+        <li>Horas extra sujetas a disponibilidad, pago total mínimo 15 min antes de ejecutarse.</li>
+        <li>El tiempo contratado transcurre ininterrumpidamente.</li>
+      </ul>
+      <div class="alerta">⚠️ Cancelaciones: 30+ días → 75% devolución | 15 días → 50% | Menos de 8 días → sin devolución (puede reagendarse).</div>
+    `
+  },
+  contrato: {
+    titulo: "📄 Contrato de Servicios Musicales",
+    dl: "Contrato_Servicios_Musicales.docx",
+    html: `
+      <h3>¿Qué cubre el contrato?</h3>
+      <p>El contrato ampara el acuerdo entre el <strong>Contratante</strong> y <strong>Total Fest</strong> para la prestación del servicio musical acordado.</p>
+      <h3>Cláusulas principales</h3>
+      <ul>
+        <li><strong>Cláusula 1:</strong> El anticipo del 50% reserva la fecha. Sin este pago el contrato no tiene validez.</li>
+        <li><strong>Cláusula 2:</strong> El 50% restante se liquida el día del evento antes de la descarga. Forma y plazo NO son negociables.</li>
+        <li><strong>Cláusula 3:</strong> Horas extra sujetas a disponibilidad. Pago total mínimo 15 min antes de ejecutarse. La zona de acción de Karaoke Sao cubre principalmente CDMX y Zona Metropolitana; para otras zonas del Estado de México u otras ciudades, el costo de traslado se determina según la distancia.</li>
+        <li><strong>Cláusula 4:</strong> Cancelación: 30+ días → 75% | 15 días → 50% | Menos de 8 días → sin devolución (puede reagendarse).</li>
+        <li><strong>Cláusula 5:</strong> Daños al equipo por invitados o instalaciones: el Contratante cubre al 100% en máximo 15 días.</li>
+        <li><strong>Cláusula 6:</strong> Daños por fuerza mayor: cada parte cubre el 50% en máximo 30 días.</li>
+        <li><strong>Cláusula 7:</strong> Eventos fuera de CDMX: casetas, gasolina, hospedaje y viáticos a cargo del Contratante.</li>
+        <li><strong>Cláusula 8:</strong> Recintos sindicalizados: cuota sindical a cargo del Contratante.</li>
+        <li><strong>Cláusula 9:</strong> Total Fest no facilita equipo a terceros sin acuerdo previo.</li>
+        <li><strong>Cláusula 10:</strong> Incumplimiento de requisitos del lugar faculta a Total Fest a negar el servicio sin devolución de anticipo.</li>
+      </ul>
+      <div class="alerta">⚠️ El tiempo contratado transcurre ininterrumpidamente. Interrupciones por mariachis, rifas, discursos o cortes de luz NO generan tiempo de reposición.</div>
+      <div class="nota">📄 Descarga el contrato completo para revisarlo con detalle antes de firmar.</div>
+    `
+  },
+  requisitos: {
+    titulo: "📍 Guía de Requisitos del Lugar",
+    dl: "Guia_Requisitos_Lugar.docx",
+    html: `
+      <h3>1. Espacio para el equipo</h3>
+      <ul>
+        <li>Área despejada y segura. Si no hay escenario o templete, un piso firme, estable y uniforme es suficiente.</li>
+        <li>Techo, lona o carpa que cubra a TODOS los músicos, instrumentos y equipo ante sol o lluvia.</li>
+        <li>Suelo firme y estable — evitar instalar sobre pasto húmedo o tierra suelta para prevenir riesgos eléctricos.</li>
+        <li>Estacionamiento cercano. Si hay distancia considerable, avisar con anticipación para prever tiempos y costos.</li>
+        <li>Si el evento es en fraccionamiento privado, condominio o privada, favor de tramitar con anticipación los permisos de acceso para vehículos de carga.</li>
+        <li>Si el acceso implica subir escaleras, cruzar terreno difícil o distancias largas desde el vehículo, se aplicará un cargo adicional por maniobras de traslado.</li>
+      </ul>
+      <h3>2. Instalación eléctrica</h3>
+      <ul>
+        <li>Contactos aterrizados (3 patas) con breaker mínimo <strong>15 Amperes</strong>.</li>
+      </ul>
+      <div class="alerta">⚠️ Si la instalación eléctrica no cumple estas condiciones y el equipo sufre daños, el Contratante asume el 100% del costo de reparación o reposición.</div>
+      <h3>3. WiFi — todos los paquetes</h3>
+      <ul>
+        <li>Se recomienda WiFi disponible para todos los paquetes (sistema QR de peticiones y control de efectos).</li>
+        <li>En caso de no haber WiFi, favor de reportarlo con anticipación para ir preparados con solución alternativa.</li>
+      </ul>
+      <h3>4. Atención para el staff</h3>
+      <ul>
+        <li>Como cortesía hacia el equipo Karaoke Sao, se agradece considerar una mesa con alimentos y bebidas durante los descansos. ¡Siempre bien recibido y muy apreciado! 😊</li>
+        <li>Si el evento es en jardín o terreno sin pavimentar, en caso de lodo o condiciones adversas podrá aplicar un cargo de limpieza de equipo.</li>
+      </ul>
+      <h3>5. Recintos sindicalizados</h3>
+      <ul>
+        <li>Si el lugar tiene sindicato (SUTM, CROC, ANDA, etc.), el Contratante cubre la cuota vigente.</li>
+        <li>Equipo adicional (pantallas extra, efectos especiales, etc.) debe solicitarse al contratar.</li>
+      </ul>
+      <h3>✅ Checklist rápido</h3>
+      <ul>
+        <li>☐ Espacio despejado con techo/lona que cubra músicos y equipo</li>
+        <li>☐ Piso firme y estable (no pasto húmedo ni tierra)</li>
+        <li>☐ Toma eléctrica aterrizada (3 patas) con breaker ≥ 15A</li>
+        <li>☐ Estacionamiento cercano al área de instalación</li>
+        <li>☐ Permisos de acceso tramitados (privadas o condominios)</li>
+        <li>☐ WiFi disponible — reportar si no hay</li>
+        <li>☐ Aviso previo si el lugar es sindicalizado</li>
+        <li>☐ Solicitar equipo adicional al momento de contratar</li>
+      </ul>
+    `
+  }
+};
+
+function abrirModal(tipo) {
+  const c = contenidos[tipo];
+  document.getElementById('modal-titulo').textContent = c.titulo;
+  document.getElementById('modal-body').innerHTML = c.html;
+  document.getElementById('modal-dl').href = c.dl;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function cerrarModal(e) {
+  if (e.target === document.getElementById('modal')) {
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
+
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+reveals.forEach(r => obs.observe(r));
+
+const bt = document.getElementById('backTop');
+window.addEventListener('scroll', () => bt.classList.toggle('visible', scrollY > 400));
+</script>
+</body>
+</html>
